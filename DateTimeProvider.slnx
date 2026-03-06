@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="DateTimeProvider.UnitTests/DateTimeProvider.UnitTests.csproj" Id="b268c22f-fa63-43a5-a5a2-f26d9bde8d04" />
+  <Project Path="DateTimeProvider/DateTimeProvider.csproj" Id="7d65ab12-e4d1-4540-ac95-cfe3d38556aa" />
+</Solution>
