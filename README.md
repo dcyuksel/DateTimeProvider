@@ -1,7 +1,6 @@
 # DateTimeProvider
 
-**Full article:** _The Clean Way to Test DateTime Logic in .NET_  
-https://medium.com/@dnzcnyksl/the-clean-way-to-test-datetime-logic-in-net-6e582a7cd92b
+**Full article:** [The Clean Way to Test DateTime Logic in .NET](https://medium.com/@dnzcnyksl/the-clean-way-to-test-datetime-logic-in-net-6e582a7cd92b)
 
 A clean, lightweight way to handle **date/time logic** in .NET without calling `System.DateTime` directly.  
 `IDateTimeProvider` exposes `Now`, `Today`, and `UtcNow`; `DateTimeProvider` implements it on top of `.NET 8`’s `TimeProvider`.
