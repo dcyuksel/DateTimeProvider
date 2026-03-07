@@ -12,7 +12,7 @@ public class SubscriptionTests
     [InlineData("2025-01-01", "2024-12-31", false)]  // Expires tomorrow
     [InlineData("2025-06-15", "2025-06-16", true)]   // Expired
     [InlineData("2025-06-15", "2025-06-14", false)]  // Still valid
-    public void IsExpired_ReturnsCorrectResult(
+    public void IsExpired(
         string expiresOnString,
         string todayString,
         bool expectedExpired)
@@ -32,7 +32,7 @@ public class SubscriptionTests
     [InlineData("2025-01-10", "2025-01-09", 1)]   // 1 day remaining
     [InlineData("2025-01-10", "2025-01-10", 0)]   // Last day
     [InlineData("2025-01-10", "2025-01-15", 0)]   // Already expired
-    public void DaysRemaining_CalculatesCorrectly(
+    public void DaysRemaining(
         string expiresOnString,
         string todayString,
         int expectedDays)

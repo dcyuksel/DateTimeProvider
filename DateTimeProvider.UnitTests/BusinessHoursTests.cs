@@ -13,7 +13,7 @@ public class BusinessHoursTests
     [InlineData("2025-01-06 08:59", false)]  // Monday 8:59 AM (not yet)
     [InlineData("2025-01-04 12:00", false)]  // Saturday noon
     [InlineData("2025-01-05 12:00", false)]  // Sunday noon
-    public void IsOpen_ReturnsCorrectResult(string currentTimeString, bool expectedOpen)
+    public void IsOpen(string currentTimeString, bool expectedOpen)
     {
         var currentTime = DateTime.Parse(currentTimeString);
         var dateTimeProvider = currentTime.CreateProvider();

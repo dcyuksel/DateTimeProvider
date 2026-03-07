@@ -12,7 +12,7 @@ public class TrialTests
     [InlineData("2025-01-01", "2025-01-14", true, 13)]   // Day 14 (last day)
     [InlineData("2025-01-01", "2025-01-15", false, 14)]  // Day 15 (expired)
     [InlineData("2025-01-01", "2025-02-01", false, 31)]  // Long expired
-    public void TrialPeriod_ReturnsCorrectStatus(
+    public void TrialPeriod(
         string startedOnString,
         string todayString,
         bool expectedActive,
